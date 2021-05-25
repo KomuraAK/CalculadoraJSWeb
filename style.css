@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    color: #fff;
+    background-image: linear-gradient(45deg,rgb(68, 68, 67), gold);
+    text-align: center;
+    font-family: "Poppins", Helvetica, sans-serif;
+}
+.main{
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    padding: 12px;
+    border-radius: 10px;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 2px;
+    background-color: rgba(161, 161, 161, 0.486);
+    border: none;
+    color: #fff;
+}
+.btn:hover{
+    background-color: black;
+}
+#btnExit{
+    background-color: white;
+    width: 214px;
+    height: 30px;
+    margin: 5px;
+    font-size: 27px;
+    color: black;
+    text-align: right;
+    line-height: 127%;
+    padding: 2px;
+    border: 3px solid goldenrod;
+}
+.btnCalc{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    text-align: center;
+    background-color: goldenrod;
+    border: none;
+    color: #fff;
+}
+.btnCalc:hover{
+   background-color: gold;
+}
+#btnLeft{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 2px;
+    background-color: goldenrod;
+    border: none;
+    color: #fff;  
+}
+#btnLeft:hover{
+    background-color: gold;
+}
+
+@media (max-width: 400px){
+    body {
+        height: 100vh;
+        color: #fff;
+        background-image: linear-gradient(45deg,rgb(68, 68, 67), #00aeff);
+        text-align: center;
+        font-family: "Poppins", Helvetica, sans-serif;
+    }
+    .btn{
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        cursor: pointer;
+        margin: 2px;
+        background-color: rgba(161, 161, 161, 0.486);
+        border: none;
+        color: #fff;
+    }
+    .btn:hover{
+        background-color: black;
+    }
+    #btnExit{
+        background-color: white;
+        width: 214px;
+        height: 30px;
+        margin: 5px;
+        font-size: 27px;
+        color: black;
+        text-align: right;
+        line-height: 127%;
+        padding: 2px;
+        border: 3px solid #0059ff;
+    }
+    .btnCalc{
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        cursor: pointer;
+        margin: 3px;
+        text-align: center;
+        background-color: #0059ff;
+        border: none;
+        color: #fff;
+    }
+    .btnCalc:hover{
+       background-color: #00c3ff;
+    }
+    #btnLeft{
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 2px;
+        background-color: #0059ff;
+        border: none;
+        color: #fff;  
+    }
+    #btnLeft:hover{
+        background-color: #00c3ff;
+    }
+}

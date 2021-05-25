@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--https://github.com/KomuraAK-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="script.js"></script>
+    <title>Calculadora - K_A</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Calculadora</h1>
+            <p id="btnExit"></p>
+            <table>
+                <tr>
+                    <td><button class="btnCalc" onclick="insert('+')">+</button></td>
+                    <td><button class="btnCalc" onclick="insert('-')">-</button></td>
+                    </td>
+                    <td><button class="btnCalc" onclick="insert('/')">/</button></td>
+                    <td><button class="btnCalc" onclick="insert('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="insert('7')">7</button></td>
+                    <td><button class="btn" onclick="insert('8')">8</button></td>
+                    <td><button class="btn" onclick="insert('9')">9</button></td>
+                    <td><button class="btnCalc" onclick="clean()">C</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="insert('4')">4</button></td>
+                    <td><button class="btn" onclick="insert('5')">5</button></td>
+                    <td><button class="btn" onclick="insert('6')">6</button></td>
+                    <td><button id="btnLeft" class="fas fa-arrow-left" onclick="letfString()"></button>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="insert('1')">1</button></td>
+                    <td><button class="btn" onclick="insert('2')">2</button></td>
+                    <td><button class="btn" onclick="insert('3')">3</button></td>
+                    <td rowspan="2"><button class="btnCalc" style="height: 106px;" onclick="calc()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="btn" style="width: 106px;" onclick="insert('0')">0</button></td>
+                    <td><button class="btn" onclick="insert('.')">,</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
